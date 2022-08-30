@@ -1,0 +1,144 @@
+﻿/* WIN98 theme by Ben Stover*/
+
+:root {
+    --background-color: teal;
+    --container-color: silver;
+    --unselected-color: gray;
+    --selected-color: navy;
+    --text-color: white;
+
+    --title-bar: linear-gradient(to right, var(--selected-color), #467aff);
+
+    background: var(--background-color);
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+* {
+    font-family: 'MS Sans Serif';
+    margin: 2px;
+    border-color: white black black white;
+    border-width: 2px;
+}
+
+.main {
+    border-style: outset;
+    background: var(--container-color);
+    margin: 10px;
+}
+
+h1 {
+    background: var(--title-bar);
+    color: var(--text-color);
+    font-size: 1.2em;
+    padding-bottom: 5px;
+}
+
+hr {
+    border-width: 1px;
+    border-color: #3337;
+}
+
+pre {
+    white-space: pre-wrap;
+    border: inset;
+    background: white;
+}
+
+button {
+    background: var(--container-color);
+}
+
+a {
+    color: var(--dark-text-color);
+    text-decoration: unset;
+    font-family: 'MS Sans Serif';
+}
+
+img {
+    margin: unset;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+
+    background: var(--container-color);
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.pages {
+    display: flex;
+    background: var(--container-color);
+}
+
+.date {
+    font-family: Consolas;
+    border: inset;
+    position: fixed;
+    right: 0;
+}
+
+.window_boxes {
+    float: right;
+    width: 25px;
+    padding: unset;
+}
+
+/* Table */
+table {
+    border-style: outset;
+    background: var(--container-color);
+    margin: 10px;
+}
+th,td {
+    border: 1px solid black;
+    padding: 2px 15px 2px 5px;
+}
+td input {
+    padding: 2px 0px 2px 2px;
+    width: 100%;
+}
+caption {
+    text-align: left;
+    font-size: 1em;
+    
+    background: var(--title-bar);
+    color: var(--text-color);
+    
+    border: 2px outset;
+    border-bottom: unset;
+}
+table, th, td, caption{
+  border-collapse: collapse;
+}
+
+/*Ice cream flavors*/
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.IceCreamFlavor {
+    max-width: 150px;
+    background: #aaa;
+}
+h1.FlavorTitle {
+    text-align: center;
+}
+img.FlavorImage {
+    max-height: 50%;
+    max-width: 100%;
+}
+div.FlavorDescription {
+    color: #333;
+}
+h4.FlavorPrice {
+	color: #000;
+}

@@ -1,0 +1,49 @@
+﻿:root{}
+
+*, button {
+	background: #246;
+	color: #ace;
+	font-family: serif;
+}
+
+/*Ice cream flavors*/
+
+div.container
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+	
+div.IceCreamFlavor
+{
+	border: 2px solid #ace;
+	margin: 6px 3px;
+	padding: 3px;
+	max-width: 150px;
+	background: #aaa5;
+}
+div.IceCreamFlavor > *
+{
+	background: transparent;
+}
+
+h1.FlavorTitle
+{
+	margin: 0px;
+	text-align: center;
+}
+
+img.FlavorImage
+{
+	max-width: 100%;
+}
+
+div.FlavorDescription
+{
+	color: #ace;
+}
+h4.FlavorPrice
+{
+	color: #ace;
+}

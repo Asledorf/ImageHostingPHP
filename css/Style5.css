@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #ddd;
+	background: #333;
+}
+
+:root, html
+{
+	background: unset;
+}
+ 
+body {
+	background: url("/images/bkg1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+form{
+    /* width: 50%; */
+    margin: 20px auto;
+}

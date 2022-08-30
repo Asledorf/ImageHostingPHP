@@ -1,0 +1,218 @@
+﻿:root {
+    /* default palette */
+    --default-bg: #bbe5f7; /* light blue */
+    --default-nav-bg: #4989e0; /* blue */
+    --default-text: #172635; /* dark blue */
+    --default-btn-bg: #f5ffcb; /* light yellow */
+    /* salem palette */
+    --salem-maroon: #1e1016;
+    --salem-pink: #e83678;
+    --salem-peach: #f98591;
+    --salem-yellow: #ffd4b7;
+    --salem-baby-pink: #ffabc4;
+    --salem-nav-bg: linear-gradient(to bottom right, var(--salem-pink), var(--salem-yellow));
+    /* black & white palette */
+    --black: #000;
+    --dark-grey: #404040;
+    --grey: #7f7f7f;
+    --light-grey: #bfbfbf;
+    --white: #fff;
+    /* ben palette */
+    --background-color: teal;
+    --container-color: silver;
+    --unselected-color: gray;
+    --selected-color: navy;
+    --text-color: white;
+    --title-bar: linear-gradient(to right, var(--selected-color), #467aff);
+}
+
+body {
+    background-image: url('/Images/sky.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #0f0f0f;
+    font-family: 'Berlin Sans FB';
+}
+
+footer {
+    background-color: var(--default-nav-bg);
+    border-top: solid 4px #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 45px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+nav {
+    background-color: var(--default-nav-bg);
+    border-bottom: solid 4px #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 100px;
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-radius: 5px;
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    padding: 10px;
+}
+
+caption {
+    text-align: center;
+    font-weight: bolder;
+}
+
+#HeaderTitle {
+    color: var(--default-text);
+    margin-left: 25px;
+    font-size: xx-large;
+}
+
+#ButtonNavHolder {
+    text-align: right;
+}
+
+#NavButton:link, #NavButton:visited {
+    border: solid 3px #597784;
+    border-radius: 8px;
+    background-color: var(--default-btn-bg);
+    padding: 10px;
+    color: var(--default-text);
+    font-weight: 600;
+    font-size: large;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+#NavButton:hover {
+    border: solid 3px #597784;
+    border-radius: 8px;
+    background-color: #faffe6;
+    padding: 10px;
+    color: #233546;
+    font-weight: 600;
+    font-size: large;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+#IndexTitle, #ProductTitle {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+    padding-left: 125px;
+}
+
+#IndexInfo {
+    text-align: center;
+    word-wrap: normal;
+    width: 200px;
+    padding-left: 150px;
+}
+
+#ProductInfo {
+    text-align: center;
+    word-wrap: normal;
+    width: 300px;
+    padding-left: 100px;
+}
+
+#IndexPic1 {
+    padding-left: 170px;
+    height: 150px;
+}
+
+#IndexPic2 {
+    padding-left: 200px;
+    height: 150px;
+}
+
+#IndexPic3 {
+    padding-left: 175px;
+    height: 150px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    text-align: center;
+    color: var(--default-btn-bg);
+    font-weight: 600;
+    font-size: large;
+}
+
+a:hover {
+    text-decoration: none;
+    text-align: center;
+    color: #faffe6;
+    font-weight: 600;
+    font-size: large;
+}
+
+#IndexRow {
+    background-color: var(--default-nav-bg);
+    color: var(--default-text);
+    width: 100%;
+    padding: 20px 0px 10px 0px;
+    border-top: solid 4px #fff;
+    border-bottom: solid 4px #fff;
+}
+
+#LoginForm {
+    background-color: var(--default-nav-bg);
+    color: var(--default-text);
+    border-top: solid 4px #fff;
+    border-bottom: solid 4px #fff;
+    text-align: center;
+}
+
+#FounderInfo, #ContactInfo, #ProductHolder, #LocationInfo {
+    background-color: var(--default-nav-bg);
+    color: var(--default-text);
+    border-top: solid 4px #fff;
+    border-bottom: solid 4px #fff;
+    text-align: center;
+}
+
+/*Ice cream flavors*/
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+div.IceCreamFlavor {
+    max-width: 150px;
+    background: var(--salem-baby-pink);
+    
+    border-width: 4px;
+    border-style: solid;
+    border-image: var(--salem-nav-bg) 1;
+    border-radius: 5px;
+}
+h2.FlavorTitle {
+    text-align: center;
+    margin: 0px;
+}
+img.FlavorImage {
+    max-height: 50%;
+    max-width: 100%;
+}
+div.FlavorDescription {
+    color: #333;
+}
+h4.FlavorPrice {
+	color: #000;
+}
